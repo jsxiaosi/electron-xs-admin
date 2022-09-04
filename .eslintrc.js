@@ -27,6 +27,14 @@ module.exports = {
     },
   },
   plugins: ['vue'],
+  overrides: [
+    {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
   rules: {
     'prettier/prettier': 'error',
     // 是否禁止使用any类型
