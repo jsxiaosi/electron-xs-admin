@@ -1,10 +1,10 @@
-<div align="center"> <a href="https://github.com/jsxiaosi/vue-xs-admin"><h1>Vue3</h1></a>
+<div align="center"> <a href="https://github.com/jsxiaosi/electron-xs-admin"><h1>electron-xs-admin</h1></a>
 </div>
 
 ## 简介
 
-基于`vue3`,`vite2`,`element-push`等主流技术开发的后台框架模板  
-预览地址：https://www.supercutexiaosi.top/  
+基于`vue3`,`vite2`,`element-push`，`electron`等主流技术开发的 electron 后台框架模板  
+网页预览地址：https://www.supercutexiaosi.top/  
 账号：admin  
 密码：admin123
 
@@ -31,16 +31,26 @@
 - 获取项目代码（https or ssh）
 
 ```bash
-git clone https://github.com/jsxiaosi/vue-xs-admin.git
+git clone https://github.com/jsxiaosi/electron-xs-admin.git
 
-git clone git@github.com:jsxiaosi/vue-xs-admin.git
+git clone git@github.com:jsxiaosi/electron-xs-admin.git
 ```
 
 - 安装依赖
 
 ```bash
 cd vite-vue3-Template
+```
 
+推荐使用`pnpm`
+
+```bash
+pnpm i
+```
+
+或者`npm`
+
+```bash
 npm install
 
 # 建议不要直接使用 cnpm 安装以来，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
@@ -52,18 +62,18 @@ npm install --registry=https://registry.npm.taobao.org
 - 运行
 
 ```bash
-npm run dev
+npm run electron:serve
 ```
 
 - 打包
 
 ```bash
-npm run build
+npm run electron:build
 ```
 
 ## 项目地址
 
-- [vite-vue3-template](https://github.com/jsxiaosi/vue-xs-admin)
+- [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
 
 ## 如何贡献
 
