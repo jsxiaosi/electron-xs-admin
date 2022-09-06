@@ -3,7 +3,7 @@
 
 ## 简介
 
-基于`vue3`,`vite2`,`element-push`，`electron`等主流技术开发的 electron 后台框架模板  
+基于[vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)开发的 electron 后台框架模板  
 网页预览地址：https://www.supercutexiaosi.top/  
 账号：admin  
 密码：admin123
@@ -142,6 +142,7 @@ npm run electron:build
 │   ├── styles                    #公共样式
 │   ├── utils                     #公共方法
 │   └── views                     #存放vue页面目录
+├── electron                      #electron配置
 ├── LICENSE
 ├── README.md
 ├── .editorconfig                 #规范编译器编码样式文件

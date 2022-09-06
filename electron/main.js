@@ -17,13 +17,16 @@ function createWindow() {
   });
 
   // 加载 index.html
-  mainWindow.loadURL(`file://${path.join(__dirname, '../dist/index.html')}`);
+  mainWindow.loadURL(
+    NODE_ENV === 'development'
+      ? 'http://localhost:5173/'
+      : `file://${path.join(__dirname, '../dist/index.html')}`,
+  );
 
   // 打开开发工具
   if (NODE_ENV === 'development') {
     mainWindow.webContents.openDevTools();
   }
-  mainWindow.webContents.openDevTools();
 }
 
 // 这段程序将会在 Electron 结束初始化

@@ -48,8 +48,8 @@
     "push": "scp -r dist/* root@服务器公网IP:/服务器资源存放地址",
     "build:push": "npm run build && npm run push",
     "electron": "wait-on tcp:5173 && electron .",
-    "electron:serve": "concurrently -k \"npm run dev\" \"npm run electron\"",
-    "electron:build": "vite build && electron-builder"
+    "electron:serve": "cross-env NODE_ENV=development concurrently -k \"npm run dev\" \"npm run electron\"",
+    "electron:build": "cross-env NODE_ENV=production vite build && electron-builder"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",

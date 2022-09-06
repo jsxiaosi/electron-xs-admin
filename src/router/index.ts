@@ -27,6 +27,7 @@ export const configMainRouter = async (app: App<Element>) => {
 
 // 路由守卫
 router.beforeEach((to, from, next) => {
+  console.log(to, from);
   NProgress.start();
   if (to.meta?.keepAlive) {
     const newMatched = to.matched;
@@ -58,10 +59,10 @@ router.beforeEach((to, from, next) => {
     } else {
       if (usePermissionStoreHook().wholeMenus.length === 0) {
         initAsyncRoute(userInfo.power || '').then((res) => {
+          console.log(res);
           if (res.length) {
             router.push({
-              path: to.path,
-              query: to.query,
+              path: res[0].path,
             });
           } else {
             removeStorage('userInfo');
