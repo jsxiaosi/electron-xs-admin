@@ -1,0 +1,30 @@
+{
+  "appId": "com.xsadmin.app",
+  "productName": "vue-xs-admin",
+  "copyright": "Copyright © 2022 <小斯斯>",
+  "icon": "public/logo-512x512.png",
+  "mac": {
+    "target": ["dmg"],
+    "category": "public.app-category.utilities"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64", "ia32"]
+      }
+    ],
+    "artifactName": "${productName}_${version}.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "deleteAppDataOnUninstall": false
+  },
+  "files": ["dist_electron", "dist"],
+  "directories": {
+    "buildResources": "assets",
+    "output": "dist_electron/release/${version}"
+  }
+}

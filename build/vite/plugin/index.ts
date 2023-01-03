@@ -28,6 +28,9 @@ import { configImageminPlugin } from './imagemin';
 // 自定义插件 问候语，打包检测用时、大小
 import viteBuildOuteInfo from './buildOuteInfo';
 
+// electron ts装换
+import electronConfig from './electronConfig';
+
 // eslint
 // import { configEsLinterPlugin } from './eslinter'
 
@@ -64,6 +67,8 @@ export function createVitePlugins(isBuild = false, _configEnv: ConfigEnv) {
   vitePlugins.push(configImageminPlugin());
 
   vitePlugins.push(viteBuildOuteInfo());
+
+  vitePlugins.push(electronConfig(['electron/main.ts', 'electron/preload.ts']));
 
   vitePlugins.push(Inspect());
 

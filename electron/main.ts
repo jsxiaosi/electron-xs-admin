@@ -1,8 +1,6 @@
-// main.js
-
 // 控制应用生命周期和创建原生浏览器窗口的模组
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
+import path from 'path';
+import { app, BrowserWindow } from 'electron';
 
 const NODE_ENV = process.env.NODE_ENV;
 
@@ -20,7 +18,7 @@ function createWindow() {
   mainWindow.loadURL(
     NODE_ENV === 'development'
       ? 'http://localhost:5173/'
-      : `file://${path.join(__dirname, '../dist/index.html')}`,
+      : `file://${path.join(__dirname, '../../dist/index.html')}`,
   );
 
   // 打开开发工具
