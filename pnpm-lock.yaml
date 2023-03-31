@@ -10,6 +10,7 @@ specifiers:
   '@jsxiaosi/commitlint-config': ^0.0.14
   '@jsxiaosi/eslint-config-prettier': ^0.0.14
   '@jsxiaosi/eslint-config-vue': ^0.0.14
+  '@jsxiaosi/utils': ^0.0.2
   '@logicflow/core': ^1.1.31
   '@logicflow/extension': ^1.1.31
   '@types/core-js': ^2.5.5
@@ -98,10 +99,10 @@ specifiers:
   wait-on: ^7.0.1
   wangeditor: ^4.7.15
   xlsx: ^0.18.5
-  xs-vue-utils: ^0.0.1
 
 dependencies:
   '@element-plus/icons-vue': 2.1.0_vue@3.2.47
+  '@jsxiaosi/utils': 0.0.2_vue@3.2.47
   '@logicflow/core': 1.1.31
   '@logicflow/extension': 1.1.31
   '@vueuse/core': 9.13.0_vue@3.2.47
@@ -132,7 +133,6 @@ dependencies:
   vue-types: 5.0.2_vue@3.2.47
   vuex: 4.1.0_vue@3.2.47
   wangeditor: 4.7.15
-  xs-vue-utils: 0.0.1_vue@3.2.47
 
 devDependencies:
   '@ehutch79/vite-eslint': 0.0.1
@@ -2898,6 +2898,22 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@jsxiaosi/utils/0.0.2_vue@3.2.47:
+    resolution:
+      {
+        integrity: sha512-hG+Wt6oqFI5I0D8Awuz+IWfXG+bPpTDPwqrYU0lptfd7X6/7nWJmakDjz7L1NYQPjLzFKOZX8Njq6qcjZHNW/w==,
+      }
+    dependencies:
+      '@types/lodash': 4.14.191
+      '@vueuse/core': 9.13.0_vue@3.2.47
+      crypto-js: 4.1.1
+      image-conversion: 2.1.1
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@logicflow/core/1.1.31:
     resolution:
@@ -18327,24 +18343,6 @@ packages:
         integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==,
       }
     dev: true
-
-  /xs-vue-utils/0.0.1_vue@3.2.47:
-    resolution:
-      {
-        integrity: sha512-xkEMkQK7g534MTdXaPahMLZDrydtYIkd1YenjKsZ7Usb3ydau+qYwCxPUa2ZDOCFMFM5p14/UOEaPKdsWMd6Tw==,
-      }
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      '@types/lodash': 4.14.191
-      '@vueuse/core': 9.13.0_vue@3.2.47
-      crypto-js: 4.1.1
-      image-conversion: 2.1.1
-      lodash: 4.17.21
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-    dev: false
 
   /xtend/4.0.2:
     resolution:
