@@ -27,7 +27,6 @@ export const configMainRouter = async (app: App<Element>) => {
 
 // 路由守卫
 router.beforeEach((to, from, next) => {
-  console.log(to, from);
   NProgress.start();
   if (to.meta?.keepAlive) {
     const newMatched = to.matched;
