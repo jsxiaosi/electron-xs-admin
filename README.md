@@ -91,7 +91,7 @@ npm install --registry=https://registry.npm.taobao.org
 ### 3.运行
 
 ```bash
-npm run electron:serve
+npm run electron:dev
 ```
 
 ### 4.打包

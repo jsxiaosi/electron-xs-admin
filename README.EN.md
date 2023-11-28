@@ -89,13 +89,13 @@ npm install
 ### 3.Developer
 
 ```bash
-npm run dev
+npm run electron:dev
 ```
 
 ### 4.Production
 
 ```bash
-npm run build
+npm run electron:build
 ```
 
 ## Project address

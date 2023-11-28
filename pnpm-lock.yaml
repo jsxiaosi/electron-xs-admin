@@ -157,9 +157,6 @@ devDependencies:
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
-  concurrently:
-    specifier: ^8.2.2
-    version: 8.2.2
   conventional-changelog-cli:
     specifier: ^4.1.0
     version: 4.1.0
@@ -301,9 +298,6 @@ devDependencies:
   vue-tsc:
     specifier: ^1.8.22
     version: 1.8.22(typescript@5.3.2)
-  wait-on:
-    specifier: ^7.2.0
-    version: 7.2.0
   xlsx:
     specifier: ^0.18.5
     version: 0.18.5
@@ -3509,22 +3503,6 @@ packages:
       '@floating-ui/core': 1.2.6
     dev: false
 
-  /@hapi/hoek@9.3.0:
-    resolution:
-      {
-        integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==,
-      }
-    dev: true
-
-  /@hapi/topo@5.1.0:
-    resolution:
-      {
-        integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-    dev: true
-
   /@humanwhocodes/config-array@0.11.10:
     resolution:
       {
@@ -4460,29 +4438,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@sideway/address@4.1.4:
-    resolution:
-      {
-        integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-    dev: true
-
-  /@sideway/formula@3.0.1:
-    resolution:
-      {
-        integrity: sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==,
-      }
-    dev: true
-
-  /@sideway/pinpoint@2.0.0:
-    resolution:
-      {
-        integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==,
-      }
-    dev: true
 
   /@sinclair/typebox@0.27.8:
     resolution:
@@ -6318,6 +6273,7 @@ packages:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
+    dev: false
 
   /babel-jest@27.5.1(@babel/core@7.22.17):
     resolution:
@@ -7612,25 +7568,6 @@ packages:
         integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==,
       }
 
-  /concurrently@8.2.2:
-    resolution:
-      {
-        integrity: sha512-1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==,
-      }
-    engines: { node: ^14.13.0 || >=16.0.0 }
-    hasBin: true
-    dependencies:
-      chalk: 4.1.2
-      date-fns: 2.30.0
-      lodash: 4.17.21
-      rxjs: 7.8.1
-      shell-quote: 1.8.1
-      spawn-command: 0.0.2
-      supports-color: 8.1.1
-      tree-kill: 1.2.2
-      yargs: 17.7.2
-    dev: true
-
   /config-chain@1.1.13:
     resolution:
       {
@@ -8351,16 +8288,6 @@ packages:
       abab: 2.0.6
       whatwg-mimetype: 3.0.0
       whatwg-url: 12.0.1
-    dev: true
-
-  /date-fns@2.30.0:
-    resolution:
-      {
-        integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==,
-      }
-    engines: { node: '>=0.11' }
-    dependencies:
-      '@babel/runtime': 7.23.4
     dev: true
 
   /dayjs@1.11.10:
@@ -13667,19 +13594,6 @@ packages:
       }
     hasBin: true
 
-  /joi@17.11.0:
-    resolution:
-      {
-        integrity: sha512-NgB+lZLNoqISVy1rZocE9PZI36bL/77ie924Ri43yEvi9GUUMPeyVIr8KdFTMUlby1p0PBYMk9spIxEUQYqrJQ==,
-      }
-    dependencies:
-      '@hapi/hoek': 9.3.0
-      '@hapi/topo': 5.1.0
-      '@sideway/address': 4.1.4
-      '@sideway/formula': 3.0.1
-      '@sideway/pinpoint': 2.0.0
-    dev: true
-
   /jpegtran-bin@5.0.2:
     resolution:
       {
@@ -16673,6 +16587,7 @@ packages:
       {
         integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==,
       }
+    dev: false
 
   /pseudomap@1.0.2:
     resolution:
@@ -17700,13 +17615,6 @@ packages:
       }
     engines: { node: '>=8' }
 
-  /shell-quote@1.8.1:
-    resolution:
-      {
-        integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==,
-      }
-    dev: true
-
   /side-channel@1.0.4:
     resolution:
       {
@@ -17993,13 +17901,6 @@ packages:
         integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==,
       }
     deprecated: Please use @jridgewell/sourcemap-codec instead
-    dev: true
-
-  /spawn-command@0.0.2:
-    resolution:
-      {
-        integrity: sha512-zC8zGoGkmc8J9ndvml8Xksr1Amk9qBujgbF0JAIWO7kXr43w0h/0GJNM/Vustixu+YE8N/MTrQ7N31FvHUACxQ==,
-      }
     dev: true
 
   /spdx-correct@3.2.0:
@@ -18708,6 +18609,7 @@ packages:
     engines: { node: '>=10' }
     dependencies:
       has-flag: 4.0.0
+    dev: false
 
   /supports-hyperlinks@2.3.0:
     resolution:
@@ -19242,14 +19144,6 @@ packages:
       {
         integrity: sha512-/y956gpUo9ZNCb99YjxG7OaslxZWHfCHAUUfshwqOXmxUIvqLjVO581BT+gM59+QV9tFe6/CGG53tsA1Y7RSdg==,
       }
-    dev: true
-
-  /tree-kill@1.2.2:
-    resolution:
-      {
-        integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==,
-      }
-    hasBin: true
     dev: true
 
   /trim-newlines@1.0.0:
@@ -20522,23 +20416,6 @@ packages:
     engines: { node: '>=14' }
     dependencies:
       xml-name-validator: 4.0.0
-    dev: true
-
-  /wait-on@7.2.0:
-    resolution:
-      {
-        integrity: sha512-wCQcHkRazgjG5XoAq9jbTMLpNIjoSlZslrJ2+N9MxDsGEv1HnFoVjOCexL0ESva7Y9cu350j+DWADdk54s4AFQ==,
-      }
-    engines: { node: '>=12.0.0' }
-    hasBin: true
-    dependencies:
-      axios: 1.6.2
-      joi: 17.11.0
-      lodash: 4.17.21
-      minimist: 1.2.8
-      rxjs: 7.8.1
-    transitivePeerDependencies:
-      - debug
     dev: true
 
   /walker@1.0.8:

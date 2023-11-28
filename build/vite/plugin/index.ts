@@ -35,7 +35,10 @@ import viteBuildOuteInfo from './buildOuteInfo';
 // eslint
 // import { configEsLinterPlugin } from './eslinter'
 
-export function createVitePlugins(_isBuild = false, _configEnv: ConfigEnv) {
+export function createVitePlugins(_isBuild = false, configEnv: ConfigEnv) {
+  const isProduction = configEnv.mode === 'production';
+  const isDevelopment = configEnv.mode === 'development';
+
   const vitePlugins: PluginOption[] = [
     // vue({
     //   reactivityTransform: true,
@@ -63,7 +66,7 @@ export function createVitePlugins(_isBuild = false, _configEnv: ConfigEnv) {
 
   vitePlugins.push(viteBuildOuteInfo());
 
-  vitePlugins.push(configElectronPlugin());
+  vitePlugins.push(configElectronPlugin(isDevelopment, isProduction));
 
   vitePlugins.push(configVueI18nPlugin());
 
