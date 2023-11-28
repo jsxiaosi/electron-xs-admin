@@ -26,12 +26,11 @@ import { configImageminPlugin } from './imagemin';
 import { configVueI18nPlugin } from './i18n';
 // element
 import { configAutoElementStylePlugin } from './element';
+// electron ts装换
+import { configElectronPlugin } from './electron';
 
 // 自定义插件 问候语，打包检测用时、大小
 import viteBuildOuteInfo from './buildOuteInfo';
-
-// electron ts装换
-import electronConfig from './electronConfig';
 
 // eslint
 // import { configEsLinterPlugin } from './eslinter'
@@ -68,7 +67,7 @@ export function createVitePlugins(_isBuild = false, _configEnv: ConfigEnv) {
 
   vitePlugins.push(viteBuildOuteInfo());
 
-  vitePlugins.push(electronConfig(['electron/main.ts', 'electron/preload.ts']));
+  vitePlugins.push(configElectronPlugin());
 
   vitePlugins.push(configVueI18nPlugin());
 

@@ -9,11 +9,11 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: path.join(__dirname, 'preload.cjs'),
     },
   });
-
   // 加载 index.html
   mainWindow.loadURL(
     NODE_ENV === 'development'
