@@ -1,14 +1,11 @@
 import type { PluginOption } from 'vite';
-// eslint-disable-next-line import/default
-import electron from 'vite-plugin-electron';
 
-export function configElectronPlugin(
-  isDevelopment: boolean,
-  isProduction: boolean,
-): PluginOption[] {
+import electron from 'vite-plugin-electron/simple';
+
+export function configElectronPlugin(isDevelopment: boolean, isProduction: boolean): PluginOption {
   if (!isDevelopment) {
-    return electron([
-      {
+    return electron({
+      main: {
         entry: 'electron/main/index.ts',
         vite: {
           build: {
@@ -17,14 +14,14 @@ export function configElectronPlugin(
             outDir: 'dist_electron/config',
             rollupOptions: {
               output: {
-                entryFileNames: 'main.cjs',
+                entryFileNames: 'main.js',
               },
             },
           },
         },
       },
-      {
-        entry: 'electron/preload/index.ts',
+      preload: {
+        input: 'electron/preload/index.ts',
         vite: {
           build: {
             sourcemap: !isProduction,
@@ -32,13 +29,14 @@ export function configElectronPlugin(
             outDir: 'dist_electron/config',
             rollupOptions: {
               output: {
-                entryFileNames: 'preload.cjs',
+                entryFileNames: 'preload.mjs',
               },
             },
           },
         },
       },
-    ]);
+      // renderer: {},
+    });
   } else {
     return [];
   }
