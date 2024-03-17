@@ -1,8 +1,8 @@
-import Electron from 'electron';
+import { IpcRenderer,IpcRendererEvent } from 'electron'
 
-export interface ElectronAPI {
+export interface ExposeInMainWorldApi {
   sendMessageToMain: (value: string) => void
-  onMessageFromMain: (callback: IpcRendererListener<[string]>) => string
+  onMessageFromMain: (callback: IpcRendererListener<[string]>) => IpcRenderer
 }
 
-declare type IpcRendererListener<T extends any[] = any[]> = (event: Electron.IpcRendererEvent, ...args: T) => void
+declare type IpcRendererListener<T extends any[] = any[]> = (event: IpcRendererEvent, ...args: T) => void

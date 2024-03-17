@@ -1,9 +1,9 @@
 import 'vue/jsx'
-import { ElectronAPI } from "./electron";
+import { ExposeInMainWorldApi } from "./electron";
 
 declare global {
   interface Window {
-    electronAPI: ElectronAPI;
+    electronAPI: ExposeInMainWorldApi;
   }
 
   type RefType<T> = T | null;
