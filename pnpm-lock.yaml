@@ -27,8 +27,8 @@ importers:
         specifier: ^10.11.0
         version: 10.11.0(vue@3.4.33(typescript@5.5.3))
       '@vueuse/electron':
-        specifier: ^10.6.1
-        version: 10.11.0(electron@29.4.5)(vue@3.4.33(typescript@5.5.3))
+        specifier: ^10.11.0
+        version: 10.11.0(electron@31.3.1)(vue@3.4.33(typescript@5.5.3))
       axios:
         specifier: ^1.7.2
         version: 1.7.2
@@ -172,8 +172,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(echarts@5.5.1)
       electron:
-        specifier: ^29.1.0
-        version: 29.4.5
+        specifier: ^31.3.1
+        version: 31.3.1
       electron-builder:
         specifier: ^24.13.3
         version: 24.13.3(electron-builder-squirrel-windows@24.13.3(dmg-builder@24.13.3))
@@ -268,7 +268,7 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1(vite@5.3.4(@types/node@18.18.0)(sass@1.77.6)(terser@5.31.3))
       vite-plugin-electron:
-        specifier: ^0.28.4
+        specifier: ^0.28.7
         version: 0.28.7(vite-plugin-electron-renderer@0.14.5)
       vite-plugin-electron-renderer:
         specifier: ^0.14.5
@@ -3589,8 +3589,8 @@ packages:
   electron-to-chromium@1.4.832:
     resolution: {integrity: sha512-cTen3SB0H2SGU7x467NRe1eVcQgcuS6jckKfWJHia2eo0cHIGOqHoAxevIYZD4eRHcWjkvFzo93bi3vJ9W+1lA==}
 
-  electron@29.4.5:
-    resolution: {integrity: sha512-DlEuzGbWBYl1Qr0qUYgNZdoixJg4YGHy2HC6fkRjSXSlb01UrQ5ORi8hNLzelzyYx8rNQyyE3zDUuk9EnZwYuA==}
+  electron@31.3.1:
+    resolution: {integrity: sha512-9fiuWlRhBfygtcT+auRd/WdBK/f8LZZcrpx0RjpXhH2DPTP/PfnkC4JB1PW55qCbGbh4wAgkYbf4ExIag8oGCA==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
 
@@ -10024,7 +10024,7 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 18.18.0
+      '@types/node': 20.14.11
       '@types/responselike': 1.0.3
 
   '@types/conventional-commits-parser@5.0.0':
@@ -10188,7 +10188,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 18.18.0
+      '@types/node': 20.14.11
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.16.1(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.5.3))(eslint@9.7.0)(typescript@5.5.3)':
@@ -10455,10 +10455,10 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/electron@10.11.0(electron@29.4.5)(vue@3.4.33(typescript@5.5.3))':
+  '@vueuse/electron@10.11.0(electron@31.3.1)(vue@3.4.33(typescript@5.5.3))':
     dependencies:
       '@vueuse/shared': 10.11.0(vue@3.4.33(typescript@5.5.3))
-      electron: 29.4.5
+      electron: 31.3.1
       vue-demi: 0.14.8(vue@3.4.33(typescript@5.5.3))
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -12050,7 +12050,7 @@ snapshots:
 
   electron-to-chromium@1.4.832: {}
 
-  electron@29.4.5:
+  electron@31.3.1:
     dependencies:
       '@electron/get': 2.0.3
       '@types/node': 20.14.11
