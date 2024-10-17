@@ -1,8 +1,8 @@
 <script setup lang="ts">
-  import { ElConfigProvider } from 'element-plus';
   // import { useIpcRenderer } from '@vueuse/electron';
   // import { ipcRenderer } from 'electron';
   import { deffElementLocale } from '@/hooks/web/useI18n';
+  import { ElConfigProvider } from 'element-plus';
 
   // const ipcRenderer = useIpcRenderer();
 
