@@ -1,6 +1,6 @@
-import type { PluginOption } from 'vite';
-
 import electron from 'vite-plugin-electron/simple';
+
+import type { PluginOption } from 'vite';
 
 export function configElectronPlugin(isDevelopment: boolean, isProduction: boolean): PluginOption {
   if (!isDevelopment) {
