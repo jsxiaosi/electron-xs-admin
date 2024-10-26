@@ -20,9 +20,9 @@
 - [github 站点](https://jsxiaosi.github.io/vue-xs-admin-docs/)
 - [gitee 站点](https://jsxiaosi.gitee.io/vue-xs-admin-docs)
 
-## 简易版
+## 完整版
 
-- [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
+- [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)
 
 ## electron 版
 
@@ -68,7 +68,7 @@ npx @jsxiaosi/xs-cli create [project-name]
 ### 2.安装依赖
 
 ```bash
-cd vue-xs-admin
+cd min-xs-admin
 ```
 
 推荐使用`pnpm`
