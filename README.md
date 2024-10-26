@@ -5,7 +5,7 @@
 
 ## 简介
 
-基于[vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)开发的 Electron 后台框架模板
+基于[min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)开发的 Electron 后台框架模板
 
 ## 预览地址
 
