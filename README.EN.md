@@ -1,33 +1,34 @@
-<div align="center">
-<a href="https://github.com/jsxiaosi/vue-xs-admin">
-<h1>vue-xs-admin</h1>
-</a>
+<div align="center"> <a href="https://github.com/jsxiaosi/electron-xs-admin"><h1>electron-xs-admin</h1></a>
 </div>
 
 **English** | [中文](./README.md)
 
-## Brief Introduction
+## Introduction
 
-The out of the box background template developed based on mainstream technologies such as `Vue3`、`Vite3`、`Element Plus`, built-in `I18n` translation, routing permission control and other solutions can meet the needs of most enterprise management systems!
+An Electron backend framework template based on [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin).
 
-## Preview address
+## Preview
 
-- [github site](https://jsxiaosi.github.io/vue-xs-admin/)
-- [gitee site](http://jsxiaosi.gitee.io/vue-xs-admin)
+- [GitHub Site](https://jsxiaosi.github.io/vue-xs-admin/)
+- [Gitee Site](https://jsxiaosi.gitee.io/vue-xs-admin)
 
 Account: admin  
 Password: admin123
 
-## Document
+## Documentation
 
-- [github site](https://jsxiaosi.github.io/vue-xs-admin-docs/)
-- [gitee site](https://jsxiaosi.gitee.io/vue-xs-admin-docs)
+- [GitHub Site](https://jsxiaosi.github.io/vue-xs-admin-docs/)
+- [Gitee Site](https://jsxiaosi.gitee.io/vue-xs-admin-docs)
 
-## Electron Edition
+## Lite Version
 
 - [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
 
-## Tauri Edition
+## Full Version
+
+- [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)
+
+## Tauri Version
 
 - [tauri-xs-admin](https://github.com/jsxiaosi/tauri-xs-admin)
 

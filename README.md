@@ -24,11 +24,11 @@
 
 - [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
 
-## electron 版
+## 完整版
 
-- [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
+- [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)
 
-## tauri 版
+## Tauri 版
 
 - [tauri-xs-admin](https://github.com/jsxiaosi/tauri-xs-admin)
 
