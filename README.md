@@ -7,6 +7,8 @@
 
 基于[min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)开发的 Electron 后台框架模板
 
+体验[vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)完整demo版本，切换分支[feature/vue-xs-admin](https://github.com/jsxiaosi/electron-xs-admin/tree/feature/vue-xs-admin)
+
 ## 预览地址
 
 - [github 站点](https://jsxiaosi.github.io/vue-xs-admin/)
