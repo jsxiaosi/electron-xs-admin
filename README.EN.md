@@ -22,7 +22,7 @@ Password: admin123
 
 ## Lite Version
 
-- [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
+- [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
 
 ## Full Version
 
