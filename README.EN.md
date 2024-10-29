@@ -22,13 +22,13 @@ Password: admin123
 - [GitHub Site](https://jsxiaosi.github.io/vue-xs-admin-docs/)
 - [Gitee Site](https://jsxiaosi.gitee.io/vue-xs-admin-docs)
 
+## Lite Version
+
+- [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
+
 ## Full Version
 
 - [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)
-
-## Electron Version
-
-- [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
 
 ## Tauri Version
 

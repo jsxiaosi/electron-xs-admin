@@ -22,15 +22,15 @@
 - [github 站点](https://jsxiaosi.github.io/vue-xs-admin-docs/)
 - [gitee 站点](https://jsxiaosi.gitee.io/vue-xs-admin-docs)
 
+## 简易版
+
+- [min-xs-admin](https://github.com/jsxiaosi/min-xs-admin)
+
 ## 完整版
 
 - [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin)
 
-## electron 版
-
-- [electron-xs-admin](https://github.com/jsxiaosi/electron-xs-admin)
-
-## tauri 版
+## Tauri 版
 
 - [tauri-xs-admin](https://github.com/jsxiaosi/tauri-xs-admin)
 
