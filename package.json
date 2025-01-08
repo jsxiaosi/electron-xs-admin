@@ -39,7 +39,7 @@
     "build:push": "npm run build && npm run push",
     "electron": "cross-env NODE_ENV=development electron .",
     "electron:dev": "vite dev --mode electron",
-    "electron:build": "cross-env NODE_ENV=production vite build && electron-builder"
+    "electron:build": "cross-env NODE_ENV=production vite build && electron-builder -p always"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
