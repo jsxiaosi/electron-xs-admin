@@ -37,6 +37,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install Snapcraft
+        if: runner.os == 'Linux'
+        uses: samuelmeuli/action-snapcraft@v3
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
