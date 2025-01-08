@@ -2,6 +2,12 @@
   "appId": "com.xsadmin.app",
   "productName": "vue-xs-admin",
   "copyright": "Copyright © 2022 <小斯斯>",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release",
+    "owner": "jsxiaosi",
+    "repo": "electron-xs-admin"
+  },
   "icon": "public/logo-512x512.png",
   "mac": {
     "target": ["dmg"],
@@ -15,6 +21,10 @@
       }
     ],
     "artifactName": "${productName}_${version}.${ext}"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "artifactName": "${productName}-Linux-${version}.${ext}"
   },
   "nsis": {
     "oneClick": false,
