@@ -1,5 +1,5 @@
-import 'vue/jsx'
-import { ExposeInMainWorldApi } from "./electron";
+import type { ExposeInMainWorldApi } from './electron';
+import 'vue/jsx';
 
 declare global {
   interface Window {
@@ -15,4 +15,4 @@ declare global {
   }
 }
 
-export { }; 
+export {};
