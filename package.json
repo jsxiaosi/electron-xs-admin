@@ -1,5 +1,5 @@
 {
-  "name": "mini-xs-admin",
+  "name": "electron-xs-admin",
   "type": "module",
   "version": "2.0.5",
   "packageManager": "pnpm@9.0.0",
@@ -39,7 +39,8 @@
     "build:push": "npm run build && npm run push",
     "electron": "cross-env NODE_ENV=development electron .",
     "electron:dev": "vite dev --mode electron",
-    "electron:build": "cross-env NODE_ENV=production vite build && electron-builder -p always"
+    "electron:build": "cross-env NODE_ENV=production vite build && electron-builder",
+    "electron:publish": "cross-env NODE_ENV=production vite build && electron-builder -p always"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -78,6 +79,7 @@
     "@types/node": "^20.9.0",
     "@types/nprogress": "^0.2.3",
     "@types/qs": "^6.14.0",
+    "@types/sortablejs": "^1.15.8",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vitejs/plugin-vue-jsx": "^5.0.1",
     "@vue/test-utils": "^2.4.6",
