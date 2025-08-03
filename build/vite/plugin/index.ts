@@ -1,17 +1,21 @@
-import vue from '@vitejs/plugin-vue';
+// tailwindcss
+import tailwindcss from '@tailwindcss/vite';
 
-import vueJsx from '@vitejs/plugin-vue-jsx';
+import vue from '@vitejs/plugin-vue';
 
 // import VueMacros from 'unplugin-vue-macros/vite';
 
+import vueJsx from '@vitejs/plugin-vue-jsx';
+
 // 检查插件状态
 import Inspect from 'vite-plugin-inspect';
-
 import type { ConfigEnv, PluginOption } from 'vite';
 // 自定义插件 问候语，打包检测用时、大小
 import viteBuildOuteInfo from './buildOuteInfo';
 // 压缩
 import { configCompressPlugin } from './compress';
+// electron ts装换
+import { configElectronPlugin } from './electron';
 // element
 import { configAutoElementStylePlugin } from './element';
 // vue-i18n
@@ -24,14 +28,12 @@ import { configMockPlugin } from './mock';
 import { configPwaPlugin } from './pwa';
 // 按需加载样式配置
 import { configStylePlugin } from './style';
+
 // svg配置
 import { configSvgPlugin } from './svg';
 
 // 性能分析工具
 import { configVisualizerPlugin } from './visualizer';
-
-// electron ts装换
-import { configElectronPlugin } from './electron';
 
 // eslint
 // import { configEsLinterPlugin } from './eslinter'
@@ -71,9 +73,11 @@ export function createVitePlugins(_isBuild = false, configEnv: ConfigEnv) {
 
   vitePlugins.push(configVueI18nPlugin());
 
-  vitePlugins.push(Inspect());
+  if (configEnv.mode !== 'test') vitePlugins.push(Inspect());
 
   vitePlugins.push(configAutoElementStylePlugin());
+
+  vitePlugins.push(tailwindcss());
 
   // 使用此插件会导致vite启动变慢 100ms左右
   // vitePlugins.push(configEsLinterPlugin(configEnv))
